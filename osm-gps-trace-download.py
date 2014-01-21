@@ -28,8 +28,7 @@ while True:
         f.close()
         
         page += 1
-        time.sleep(60
-        )
+        time.sleep(60)
     except urllib2.HTTPError ,e:
         print "Download stopped; HTTP Error - %s" % e.code
         break
