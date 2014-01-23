@@ -4,9 +4,12 @@ import time
 import os
 import errno
 
+#Output file name
 output_file_name = "trace-out.gpx"
+#Output file directory
 output_directory = "output"
 
+#Check whether output directory exists?
 def make_sure_path_exists(path):
     try:
         os.makedirs(path)
