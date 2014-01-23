@@ -2,12 +2,17 @@ import urllib2
 import time
 
 #Boundary Box
-min_ln = "98.9311981"
-min_lt = "18.7347042"
-max_ln = "99.0335083"
-max_lt = "18.8309158"
+#min_ln = "98.9311981"
+#min_lt = "18.7347042"
+#max_ln = "99.0335083"
+#max_lt = "18.8309158"
 
-page = 78 
+min_ln = "100.3784752"
+min_lt = "14.8641643"
+max_ln = "100.4340935"
+max_lt = "14.9170853"
+
+page = 0 
 
 url = "http://api.openstreetmap.org/api/0.6/trackpoints?bbox="+min_ln+","+min_lt+","+max_ln+","+max_lt+"&page="+str(page)
 
