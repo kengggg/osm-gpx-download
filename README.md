@@ -1,7 +1,9 @@
-osm-gps-trace-download
+osm-gps-trace-download.py
 ======================
 
-A Python script for downloading OSM's GPS traces from given boundary box. There are 2 parts of variables that you should adjust to match your need.
+A Python script for downloading OSM's GPS traces from given boundary box. 
+
+There are 2 parts of variables that you should adjust to match your need.
 
 
 ```python
@@ -17,5 +19,26 @@ max_lt = "18.8309158"
 page = 0 
 ```
 
-#Running script
-`python osm-gps-trace-download.py`
+Simply run `python osm-gps-trace-download.py`
+
+gpx-merger.py
+======================
+
+A Python script for merging OSM's GPX files.
+
+There are 2 parts of variables that you should adjust to match your need.
+
+```python
+#Output file name
+output_file_name = "trace-out.gpx"
+#Output file directory
+output_directory = "output"
+```
+
+Simply run `python gpx-merger.py`. You output file should be in `output/trace-out.gpx` by default.
+
+Todo
+======================
+
+* Resumable GPX file download
+* Merged GPX file noise reduction
