@@ -1,13 +1,16 @@
 import urllib2
 import time
 
+#These variables should be adjusted to meet your requirements, 
+#see http://wiki.openstreetmap.org/wiki/API_v0.6#Retrieving_GPS_points for more information
+
 #Boundary Box
 min_ln = "98.9311981"
 min_lt = "18.7347042"
 max_ln = "99.0335083"
 max_lt = "18.8309158"
 
-#Start downloading page
+#Start downloading
 page = 0 
 
 #Using OSM API V0.6
